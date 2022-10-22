@@ -18,7 +18,11 @@ table{
 
 tr{
     border: 2px black solid;
+    border-top: none;
+    
 }
 td{
     border: 2px black solid;
+    border-bottom: none;
+    
 }
