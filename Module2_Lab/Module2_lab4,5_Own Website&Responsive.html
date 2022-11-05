@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        body{
+         
+          background: linear-gradient(19deg, Violet, Orange) no-repeat;
+        
+        }
+        main{
+            
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+        }
+
+       
+        nav{
+            border: 2px solid lightgoldenrodyellow;
+            border-radius: 10px;
+            
+        }
+        .name,.subtitle,.phone,.email{
+            padding-left: 10px;
+        }
+        .profile{
+            width: 150px;
+            border-radius: 50%;
+        }
+        .personal , .skills_header{
+            background-color: lightgoldenrodyellow;
+            height: 40px;
+            padding-left: 15px;
+            margin-bottom: 0px;
+        }
+       a{
+        padding-left: 10px;
+        text-decoration: none;
+        color: lightgoldenrodyellow;
+        font-size: x-large;
+         }
+
+         a:hover{
+            color: white;
+            font-size:xx-large ;
+            
+         }
+          
+     .contact{
+        display: none;
+     }
+         a:hover + .contact{
+            display: block;
+         }
+
+         a:visited{
+            color: black;
+            font-size: medium;
+         }
+
+         
+
+        table{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-spacing: 20px;
+
+        }
+     
+        .info{
+            
+            margin-left: 10px;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .experience,.marketing_manager,.education{
+            border-bottom: 2px solid lightpink;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+
+        }
+   
+        @media only screen and (max-width: 500px) {
+            main{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+            nav,.info{
+                width: 100%;
+            }
+            nav{
+                text-align: center;
+            }
+            body{
+                text-align: center;
+            }
+        }
+
+        li{
+            text-align: start;
+        }
+    </style>
+</head>
+<body>
+    <main>   
+        <nav>
+        <h2 class="name">Henry Hong</h2>
+        <figure>
+            <img src="/여권web.jpg" alt="profile" class="profile">  
+        </figure>
+        <p class="subtitle">Web Develpoer</p>
+
+        <h2 class="personal">Personal Info</h2>
+        <h4 class="phone">Phone</h4>
+        <p class="contact">Contact Me NOW !! </p>
+        <p><a href="#">+6402040156199</a></p>
+
+        <h4 class="email">Email</h2>
+            <p class="contact">Contact Me NOW !! </p>
+        <p><a href="#">lvsy91@gmail.com</a></p>
+
+        <h2 class="skills_header">Skills</h2>
+   
+
+        <table>
+           <tr>
+            <th>HTML</th>
+            <th>Intermediate</th>
+           </tr>
+           <tr>
+            <th>CSS</th>
+            <th>Intermediate</th>
+           </tr>
+           <tr>
+            <th>JavaScript</th>
+            <th>Intermediate</th>
+           </tr>
+        </table>
+    </nav>
+    
+    <section class="info">
+        <article class="experience">
+            <h2>Experience</h2>
+            <h5>Web developer</h5>
+            <p>AwesomeCo,December 2021 - Current</p>
+
+            <ul>
+                <li>creating beautiful website with use of HTML and CSS</li>
+                <li>Following best accessibility principles</li>
+                <li>Solving problem and proposing smooth, working solutions</li>
+            </ul>
+
+            
+        </article>
+
+        <article class="marketing_manager">
+          
+                <h2>Marketing Manager</h2>
+                <h5>My retail CO,December 2021 - Current</h5>
+                <ul>
+                    <li>creating beautiful website with use of HTML and CSS</li>
+                    <li>Following best accessibility principles</li>
+                    <li>Solving problem and proposing smooth, working solutions</li>
+                </ul>
+        </article>
+
+        <article class="education">
+          
+            <h2>Education</h2>
+            <h5>Institute of Date, 11th Oct-2023 </h5>
+            <ul>
+                <li>HTML and CSS</li>
+                <li>JavaScript</li>
+                <li>nods.js</li>
+                <li>React</li>
+                <li>Express servers</li>
+            </ul>
+    </article>
+
+
+    </section>
+   
+</main>
+
+
+
+</body>
+<footer><h5>Created By Henry Hong,2022</h5></footer>
+</html>
